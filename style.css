@@ -30,6 +30,25 @@ body {
     overflow-x: hidden;
 }
 
+.hero .container {
+    display: flex;
+    align-items: center;     /* vertically centers text + image */
+    justify-content: space-between;
+    gap: 40px;               /* space between text & image */
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
+
+
 .container {
     width: 90%;
     max-width: 1200px;
